@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/headerStyle.css">
+    <link rel="stylesheet" href="style/sliderStyle.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/thirdDimensionButton.css">
+    <link rel="stylesheet" href="style/whoare.css">
+    <link rel="stylesheet" href="style/textStyle.css">
+    <link rel="stylesheet" href="style/video.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <script src="https://kit.fontawesome.com/baa55f3515.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script/headerscripts.js"></script>
+    <script type="text/javascript" src="script/slider.js"></script>
+    <script type="text/javascript" src="script/utils.js"></script>
+    <title>Future School | Home</title>
+</head>
+
+<body onload="setAnimation()" >
+
+    <!-- ------------------------------ Header, nav bar. ---------------------------------------->
+    <header class="clearfix">
+        <!-- Title of Home -->
+        <div class="title-home inline float-left left-align">
+            <h1>
+                Future School
+            </h1>
+        </div>
+        <!-------------------------------->
+
+        <!-- Logo icon -->
+        <div class="logo-home inline float-left centered pointed">
+            <img class="logo" src="media/image/logo/LogoFutureSchool.png" alt="Logo">
+        </div>
+        <!-------------------------------->
+
+        <!-- navigation bar -->
+        <!-- desktop window -->
+        <div class="nav-bar-home inline right-align float-left">
+            <nav class="nav-bar block">
+                <ul class="list-item">
+                    <li class="item pointed inline float-right">
+                        <a href="pages/whoare.html">
+                            <button class="third-dimension-button blue-button">
+                                <span class="front">
+                                    <i class="link link-text block" > Who are </i>
+                                </span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="item pointed inline float-right">
+                        <a href="pages/newletterlogin.html">
+                            <button class="third-dimension-button blue-button">
+                                <span class="front">
+                                    <i class="link link-text block" > News </i>
+                                </span>
+                            </button>
+                        </a>
+                        
+                    </li>
+                    <li class="item pointed inline float-right">
+                        <a href="pages/contac.html">
+                            <button class="third-dimension-button blue-button">
+                                <span class="front">
+                                    <i class="link link-text block" > Contact us </i>
+                                </span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="item pointed inline float-right">
+                        <button class="third-dimension-button blue-button">
+                            <span class="front">
+                                <a class="link link-text block"> Home </a>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- --------------------------------------------------------------------- -->
+        <!-- smarthphone view -->
+
+        <div class="nav-bar-collapsed float-left">
+            <nav class="dropdown">
+                <button type="button" onclick="onDropDownButtonClick();"
+                    class="dropdown-menu-button float-right pointed">
+                    <span class="front"> <i class="fas fa-bars"></i> </span>
+
+                    <ul id="drop-menu" class="dropdown-menu right-align">
+                        <li class="item block">
+                            <a class="link-text" href=""> Home </a>
+                        </li>
+                        <li class="item block">
+                            <a class="link-text" href="pages/contac.html"> Contact us </a>
+                        </li>
+                        <li class="item block">
+                            <a class="link-text" href="pages/newletterlogin.html"> News </a>
+                        </li>
+                        <li class="item block">
+                            <a class="link-text" href="pages/whoare.html"> Who are </a>
+                        </li>
+                    </ul>
+                </button>
+
+            </nav>
+        </div>
+        <!-------------------------------->
+    </header>
+    <!-- ---------------------------- Header and nav bar ----------------------------------- -->
+
+
+
+    <!-- slider images -->
+
+    <div class="slider block centered">
+
+        <div class="slider-container" >
+
+            <div class="slide-button" onclick="prevSlide()">
+                <i class="fas fa-angle-double-left"></i>
+            </div>
+
+            <div class="slide-content fade">
+                <div class="image block">
+                    <img src="media/image/student1.jpg" alt="image" />
+                </div>
+                <div class="text block">
+                    <h1>
+                        Sei uno Studente?
+                    </h1>
+                    <p>
+                        Se sei uno studente delle scuole medie superiori di primo o secondo grado sei nel posto giusto,
+                        Future School è quello che fa per te, scopri la piattaforma per le necessità dello studente...
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide-content none fade">
+                <div class="image block">
+                    <img src="media/image/student_1400px.jpg" alt="">
+                </div>
+                <div class="text block">
+                    <h1>
+                        Sei un preside o una istituzione scolastica?
+                    </h1>
+                    <p>
+                        Se sei un preside o un'organizzazione scolastica puoi facilmente
+                        usufruire dei nostri servizi, scopri come iscrivere la tua scuola nel mondo del futuro...
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide-content none fade">
+                <div class="image block">
+                    <img src="media/image/Agency1.jpg" alt="image" />
+                </div>
+                <div class="text block">
+                    <h1>
+                        Sei un titolare e gestisci un' azienda?
+                    </h1>
+                    <p>
+                        Se sei un titolare d'azienda o un rappresentante e sei interessato a trovare
+                        il tuo giusto target di dipendenti affidati a noi, coi nostri strumenti potrai
+                        dedicare meno tempo alla ricerca di nuovi diplomati o laureati con qualche click,
+                        è semplice basta accedere...
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide-button right-button" onclick="nextSlide()">
+                <i class="fas fa-angle-double-right"></i>
+            </div>
+
+
+            <div class="slide-bottom-button block">
+                <i class="fas fa-circle active" onclick="setCurrentSlide(1)"></i>
+                <i class="fas fa-circle" onclick="setCurrentSlide(2)"></i>
+                <i class="fas fa-circle" onclick="setCurrentSlide(3)"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="text-greater float-left inline background-white">
+            <h1 class="title font-default">Vuoi unirti a noi?</h1>
+            <p class="paragraph font-default justify">Il nostro team è formato da studenti dell'istituto Alessandro Volta di Sassuolo(MO).<br>
+                Siamo intraprendenti e ricerchiamo sempre nuove idee e nuovi obbiettivi da porci, se anche tu
+                come noi vedi nel futuro una scuola che ti prepara al mondo del lavoro ma non solo, che aspetti
+                contattaci subito saremo lieti di accogliere le tue proposte.
+            </p>
+
+            
+                <div class="button">
+                    <a href="pages/contac.html">
+                        <button class="third-dimension-button blue-button">
+                            <span class="front">
+                                <b class="paragraph font-default white">Contact</b>
+                            </span>
+                        </button>
+                    </a>
+                </div>
+                
+
+        </div>
+
+        <div class="image-smaller float-left inline">
+            <img class="full-image" src="media/image/HomeImage1.jpg" alt="home image">
+        </div>
+    </div>
+
+
+    <div class="container-accounts background-dark">
+
+        <div class="paragraph centered font-default white">
+            <h1>Chi siamo?</h1>
+        </div>
+
+        <div class="container-account-image clearfix">
+            
+
+            <div class="account-container inline float-left centered">
+                <div class="photo">
+                    <img src="media/account/ghera-small.jpeg" alt="foto ghera">
+                </div>
+                <div class="paragraph-position">
+                    <p  class="paragraph font-default white">
+                        C.R.O,  amministratore rischi e rappresentante aziendale.
+                    </p>
+                </div>
+                <div class="button-position"> 
+                    <button class="third-dimension-button dark-button">
+                        <span class="front">
+                            <i class="link font-default paragraph"> Instagram </i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="account-container inline float-left centered">
+                <div class="photo">
+                    <img src="media/account/tincani-small.jpg" alt="foto tadas">
+                </div>
+                <div class="paragraph-position">
+                    <p  class="paragraph font-default white">
+                        C.E.O, amministratore e Web Developer.
+                    </p>
+                </div>
+                <div class="button-position">
+                    <button class="third-dimension-button dark-button">
+                        <span class="front">
+                            <i class="link font-default paragraph"> Instagram </i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="account-container inline float-left centered">
+                <div class="photo">
+                    <img src="media/account/diglio-small.jpeg" alt="foto paolo">
+                </div>
+                <div class="paragraph-position">
+                    <p class="paragraph font-default white">
+                        C.T.O, amministratore tecnico e Designer.
+                    </p>
+                </div>
+                <div class="button-position">
+                    <button class="third-dimension-button dark-button">
+                        <span class="front">
+                            <i class="link font-default paragraph"> Instagram </i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-button">
+            <div class="button-position">
+                <a href="pages/whoare.html">
+                    <button class="third-dimension-button gold-button">
+                        <span class="front">
+                            <i class="link font-default paragraph"> Show More </i>
+                        </span>
+                    </button>
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container background-fixed position-relative-responsive">
+        <video id="replay-video" style="width: 100%;" autoplay muted onended="start()" >
+            <source src="media/videos/socialvideo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="container" id="starter-animation">
+
+        <div  class="text-smaller float-left inline right-entry hidden entry-animation" style="border-right: 5px solid white;">
+            <div >
+                <h1 class="title white">Vuoi rimanere aggiornato?</h1>
+                <p class="paragraph white">
+                    Consideriamo la tua attenzione una fonte di ispirazione al miglioramento,
+                    il tuo supporto ci aiuta a capire e migliorare il nostro target e a fornirti
+                    funzionalità migliori.
+                </p>
+            </div>
+
+            <div class="centered">
+                <a href="pages/newletterlogin.html">
+                    <button class="third-dimension-button dark-button">
+                        <span class="front">
+                            <i class="link paragraph"> Accedi alla Newsletter</i>
+                        </span>
+                    </button>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="text-greater float-left inline right-align left-entry hidden  entry-animation">
+            <div>
+                <h1 class="title white">Vuoi accedere al servizio? Iscriviti ora, basta un click</h1>
+            </div>
+
+            <div class="centered">
+                <button onclick="alert('ci dispiace questa funzione è attualmente bloccata!');" class="third-dimension-button white-button">
+                    <span class="front">
+                        <a class="link paragraph">FutureSchool</a>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="background-dark">
+        <footer>
+            <div class="clearfix ">
+                <div class="column float-left inline border-right-white">
+                    <p class="paragraph white default-font">Riferimenti</p>
+                    <ul>
+                        <li>
+                            <a class="default-font link" href="pages/contac.html">Contatti</a>
+                        </li>
+                        <li>
+                            <a class="default-font link" href="pages/newletterlogin.html">NewsLetter</a>
+                        </li>
+                        <li>
+                            <a class="default-font link" href="pages/whoare.html">Chi Siamo</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="column float-left inline border-right-white">
+                    <p class="paragraph white default-font">Fonti</p>
+                    <ul>
+                        <li>
+                            <a class="default-font link" target="_black" href="https://www.pexels.com">Pexel</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column float-left inline">
+                    <p class="paragraph white default-font">Contatti</p>
+                    <ul>
+                        <li>
+                            <a class="default-font link" href="#">info@futureschool.it</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="default-font link" href="#">agency@futureschool.it</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="hr-footer">
+
+            <div class="centered white">
+                <p> © 2021-2022, FutureSchool, BerryIndustry. </p>
+            </div>
+            
+            
+
+
+        </footer>
+    </div>
+</body>
+
+</html>

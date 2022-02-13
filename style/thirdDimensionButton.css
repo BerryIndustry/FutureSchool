@@ -1,0 +1,167 @@
+
+.third-dimension-button{
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+
+    transition: 250ms;
+
+    user-select: none;
+}
+
+.third-dimension-button .front{
+    will-change: transform;
+    transition: transform 250ms;
+
+    display: block;
+    padding: 12px 12px;
+    border-radius: 12px;
+    transform: translateY(-4px);
+
+    user-select: none;
+}
+
+.third-dimension-button:hover .front{
+    transform: translateY(-8px);
+}
+
+.third-dimension-button:focus:not(:focus-visible){
+    outline: none;
+}
+
+.third-dimension-button:active .front{
+    transform: translateY(-2px);
+}
+
+.white-button{
+    background: linear-gradient(
+        to left,    
+        rgb(184, 184, 184) 0%,
+        rgb(230, 230, 230) 30%,
+        rgb(230, 230, 230) 60%,
+        rgb(184, 184, 184) 90%
+    );
+}
+
+.white-button:hover{
+    background: linear-gradient(
+        to left,
+        black 0%,
+        rgb(22, 22, 22) 30%,
+        rgb(22, 22, 22) 60%,
+        black 90%
+    );
+}
+
+.white-button .front{
+    background-color: rgb(255, 255, 255);
+}
+
+.white-button:hover .front{
+    background-color: rgb(25, 25, 25);
+}
+
+.white-button:hover .front .link{
+    color: white;
+}
+
+.white-button .front .link{
+    color: black;
+    text-decoration: none;
+}
+
+
+.dark-button{
+    background: linear-gradient(
+        to left,
+        black 0%,
+        rgb(22, 22, 22) 30%,
+        rgb(22, 22, 22) 60%,
+        black 90%
+    );
+}
+
+.dark-button:hover{
+    background: linear-gradient(
+        to left,    
+        rgb(184, 184, 184) 0%,
+        rgb(230, 230, 230) 30%,
+        rgb(230, 230, 230) 60%,
+        rgb(184, 184, 184) 90%
+    );
+}
+
+.dark-button .front{
+    background-color: rgb(25, 25, 25);
+}
+
+.dark-button:hover .front{
+    background-color: rgb(255, 255, 255);
+}
+
+.dark-button:hover .front .link{
+    color: black;
+}
+
+.dark-button .front .link{
+    color: white;
+    text-decoration: none;
+
+    user-select: none;
+}
+
+
+.blue-button{
+    background: linear-gradient( to left,
+        rgb(5, 24, 82) 0%,
+        rgb(17, 71, 231) 30%,
+        rgb(17, 71, 231) 60%,
+        rgb(5, 24, 82) 90%
+    );
+}
+
+.blue-button:hover{
+    background: linear-gradient( to left,
+        rgb(129, 98, 4)  0%,
+        rgb(234, 175, 0) 30%,
+        rgb(234, 175, 0) 60%,
+        rgb(129, 98, 4) 90%
+    );
+}
+
+.blue-button .front{
+    background-color: rgb(51, 102, 255);
+}
+
+.blue-button:hover .front{
+    background-color: rgb(204, 153, 0);
+}
+
+.blue-button:hover .front .link{
+    color: black;
+}
+
+.blue-button .front .link{
+    color: white;
+    text-decoration: none;
+}
+
+.gold-button{
+    background: linear-gradient( to left,
+        rgb(129, 98, 4)  0%,
+        rgb(234, 175, 0) 30%,
+        rgb(234, 175, 0) 60%,
+        rgb(129, 98, 4) 90%
+    );
+}
+
+.gold-button .front{
+    background-color: rgb(204, 153, 0);
+}
+
+.gold-button .front .link{
+    color: black;
+    text-decoration: none;
+}

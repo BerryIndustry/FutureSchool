@@ -1,0 +1,34 @@
+footer{
+    padding: 15px;
+    height: 220px;
+}
+
+.column{
+    width: 32%;
+    height: 100%;
+
+
+    text-align: center;
+
+    height: 120px;
+}
+
+.border-right-white{
+    border-right: 2px solid white;
+}
+
+.border-right-black{
+    border-right: 2px solid black;
+}
+
+.hr-footer{
+    margin: 15px 2px;
+    width: 80%;
+
+    position: relative;
+    left: 10%;
+}
+
+.max-height{
+    height: 100%;
+}

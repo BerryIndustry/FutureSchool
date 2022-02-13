@@ -1,0 +1,165 @@
+
+.container{
+    position: relative;
+    top: 120px;
+
+    width: 100%;
+    height: 500px;
+}
+
+.container .button-position{
+
+    width: auto;
+
+    position: relative;
+    top: 15px;
+    left: 30%;
+}
+
+.container .text-greater{
+    width: 60%;
+    height: 100%;
+}
+
+.container .image-smaller{
+    width: 40%;
+    height: 100%;
+}
+
+.container .image-greater{
+    width: 60%;
+    height: 100%;
+}
+
+.container .image-greater .full-image{
+    width: 100%;
+    height: 500px;
+}
+
+.container .image-smaller .full-image{
+    width: 100%;
+    height: 100%;
+}
+
+.container .text-smaller{
+    width: 39%;
+    height: 100%;
+}
+
+.container .text-greater .title,.container .text-smaller .title{
+    margin: 45px 25px;
+}
+
+.container .text-greater .paragraph,.container .text-smaller .paragraph{
+    margin: 45px 25px;
+    width: 80%;
+}
+
+
+.container .text-greater .button{
+    margin: 25px 40%;
+}
+
+
+@media screen and (max-width: 1500px) {
+    
+    .container .image-smaller{
+        width: 45%;
+    }
+    .container .text-greater{
+        width: 55%;
+    }
+
+    .container{
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        height: 350px;
+    }
+
+    .container .text-greater .title,.container .text-smaller .title{
+        margin: 25px 15px;
+    }
+    
+    .container .text-greater .paragraph,.container .text-smaller .paragraph{
+        margin: 25px 15px;
+        width: 80%;
+    }
+
+    .container .text-greater .button{
+        margin: 15px 40%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .container{
+        height: 800px;
+    }
+
+    .container .text-greater{
+        width: 100%;
+        height: 300px;
+    }
+
+    .container .image-smaller{
+        width: 100%;
+        height: 500px;
+
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        height: 800px;
+    }
+
+    .container .text-greater{
+        width: 100%;
+        height: 400px;
+    }
+
+    .container .image-smaller{
+        width: 100%;
+        height: 300px;
+
+        background-attachment: fixed;
+    }
+
+    .container .text-greater .button{
+        margin: 15px 32%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container{
+        height: 800px;
+    }
+
+    .container .text-greater{
+        width: 100%;
+        height: 450px;
+    }
+
+    .container .image-smaller{
+        width: 100%;
+        height: 200px;
+
+        background-attachment: fixed;
+    }
+
+    .container .text-greater .button{
+        margin: 10px 30%;
+    }
+
+
+}

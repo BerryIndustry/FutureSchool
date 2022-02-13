@@ -1,0 +1,104 @@
+#contact-form{
+    position: relative;
+    top: 5%;
+    left: 40%;
+}
+
+#contact-container{
+    height: 600px;
+}
+
+.form{
+    position: relative;
+    left: 28%;
+
+    width: 300px;
+    height: auto;
+
+    background-color: rgba(17, 71, 231, 0.2);
+
+    border-radius: 20px;
+
+    padding: 15px;
+
+    box-shadow: 10px 10px 15px rgba(17, 71, 231, 0.4);
+}
+
+.form .title-form{
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+.form .section{
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    margin-bottom:  20px;
+
+    display: block;
+}
+
+.form .section label{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    pointer-events: none;
+
+    padding: 10px 12px;
+
+    font-size: 20px;
+
+    transition: .5s;
+}
+
+.form .section input{
+    padding: 5px;
+
+    font-size: 20px;
+    width: 90%;
+    height: auto;
+    border: none;
+    border-bottom: 3px solid rgb(234, 175, 0, 1);
+
+    outline: none;
+
+    background-color: transparent;
+}
+
+.form .section textarea{
+    padding: 5px;
+
+    font-size: 20px;
+    width: 90%;
+    height: auto;
+    border: 1px solid transparent;
+    border-bottom: 3px solid rgb(234, 175, 0, 1);
+
+    outline: none;
+    resize: none;
+    background-color: transparent;
+
+    height: 100px;
+}
+
+
+.form .section input:focus ~ label,
+.form .section input:valid ~ label,
+.form .section textarea:focus ~ label,
+.form .section textarea:valid ~ label{
+    font-size: 12px;
+    color: rgb(234, 175, 0, 1);
+
+    position: absolute;
+    top: -7px;
+    padding: 0 12px;
+
+    z-index: 1;
+    transition: .5s;
+}

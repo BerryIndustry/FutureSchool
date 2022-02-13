@@ -1,0 +1,47 @@
+.background-fixed{
+    position: fixed;
+
+    z-index: -1;
+}
+
+
+.entry-animation{
+    text-rendering:optimizeSpeed;
+}
+
+.right-entry{
+    animation-name: right-entry;
+    animation-duration: 2s;
+}
+
+.position-relative-responsive{
+    position: fixed;
+    top: 0px;
+}
+
+@keyframes right-entry {
+    from{
+        opacity: 0;
+        transform: translateX(-18px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(18px);
+    }
+}
+
+.left-entry{
+    animation-name: left-entry;
+    animation-duration: 2s;
+}
+
+@keyframes left-entry {
+    from{
+        opacity: 0;
+        transform: translateX(18px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(-18px);
+    }
+}

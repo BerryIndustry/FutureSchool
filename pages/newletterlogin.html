@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/headerStyle.css">
+    <link rel="stylesheet" href="../style/textStyle.css">
+    <link rel="stylesheet" href="../style/thirdDimensionButton.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/contact.css">
+    <link rel="stylesheet" href="../style/form.css">
+    <title>FutureSchool | NewsLetter | Login</title>
+</head>
+<body>
+    
+
+    <!-- ------------------------------ Header, nav bar. ---------------------------------------->
+    <header class="clearfix">
+        <!-- Title of Home -->
+        <div class="title-home inline float-left left-align">
+            <h1>
+                Future School
+            </h1>
+        </div>
+        <!-------------------------------->
+
+        <!-- Logo icon -->
+        <div class="logo-home inline float-left centered pointed">
+            <img class="logo" src="../media/image/logo/LogoFutureSchool.png" alt="Logo">
+        </div>
+        <!-------------------------------->
+
+        <!-- navigation bar -->
+        <!-- desktop window -->
+        <div class="nav-bar-home inline right-align float-left">
+            <nav class="nav-bar block">
+                <ul class="list-item">
+                    <li class="item pointed inline float-right">
+                        <a href="newletterlogin.html">
+                            <button class="third-dimension-button blue-button">
+                                <span class="front">
+                                    <i class="link link-text block"> News </i>
+                                </span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="item pointed inline float-right">
+                        <a href="contac.html">
+                            <button class="third-dimension-button blue-button">
+                                <span class="front">
+                                    <i class="link link-text block"> Contact us </i>
+                                </span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="item pointed inline float-right">
+                        <a href="../index.html">
+                            <button class="third-dimension-button blue-button">
+                                <span class="front">
+                                    <i class="link link-text block"> Home </i>
+                                </span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- --------------------------------------------------------------------- -->
+        <!-- smarthphone view -->
+
+        <div class="nav-bar-collapsed float-left">
+            <nav class="dropdown">
+                <button type="button" onclick="onDropDownButtonClick();"
+                    class="dropdown-menu-button float-right pointed">
+                    <span class="front"> <i class="fas fa-bars"></i> </span>
+
+                    <ul id="drop-menu" class="dropdown-menu right-align">
+                        <li class="item block">
+                            <a class="link-text" href="../index.html"> Home </a>
+                        </li>
+                        <li class="item block">
+                            <a class="link-text" href="contac.html"> Contact us </a>
+                        </li>
+                        <li class="item block">
+                            <a class="link-text" href="whoare.html"> Who Are </a>
+                        </li>
+                    </ul>
+                </button>
+
+            </nav>
+        </div>
+        <!-------------------------------->
+    </header>
+    <!-- ---------------------------- Header and nav bar ----------------------------------- -->
+
+
+    <div class="container centered">
+        <div class="text-smaller inline float-left border-right-black">
+            <h1 class="paragraph">Rimani Aggiornato... </h1>
+            <form class="form" action="action.php">
+                <h1 class="title-form">Iscriviti</h1>
+                <div class="section">
+                    <input required type="mail" name="name" id="nome">
+                    <label for="mail">Mail: </label>
+                </div>
+                
+                
+                <div class="section">
+                    <button type="submit" class="third-dimension-button blue-button">
+                        <span class="front">
+                            <i class="link link-text block"> Iscriviti </i>
+                        </span>
+                    </button>
+                </div>                
+            </form>
+        </div>
+
+        <div class="text-greater inline float-left centered">
+            <h1 class="paragraph">... o fornicisci più informazioni</h1>
+            <form action="action.php" class="form">
+                <h1 class="title-form"> Iscriviti </h1>
+                <div class="section"> 
+                    <input required type="text" name="name" id="name">
+                    <label font-default" for="name">Nome: </label>
+                </div>
+                
+                <div class="section">
+                    <input required type="text" name="surname" id="surname">    
+                    <label for="surname">Cognome: </label>
+                </div>
+
+                <div class="section">
+                    <input required type="mail" name="mail" id="mail">
+                    <label for="mail">E-mail: </label>
+                </div>
+                
+
+                <div class="section">
+                    <button type="submit" class="third-dimension-button blue-button">
+                        <span class="front">
+                            <i class="link link-text block"> Iscriviti </i>
+                        </span>
+                    </button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+
+    <div class="container background-dark">
+        <footer>
+            <div class="clearfix ">
+                <div class="column float-left inline border-right-white">
+                    <p class="paragraph white default-font">Riferimenti</p>
+                    <ul>
+                        <li>
+                            <a class="default-font link" href="contac.html">Contatti</a>
+                        </li>
+                        <li>
+                            <a class="default-font link" href="#">NewsLetter</a>
+                        </li>
+                        <li>
+                            <a class="default-font link" href="whoare.html">Chi Siamo</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="column float-left inline border-right-white">
+                    <p class="paragraph white default-font">Fonti</p>
+                    <ul>
+                        <li>
+                            <a class="default-font link" href="https://www.pexels.com">Pexel</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column float-left inline">
+                    <p class="paragraph white default-font">Contatti</p>
+                    <ul>
+                        <li>
+                            <a class="default-font link" href="#">info@futureschool.it</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="default-font link" href="#">agency@futureschool.it</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="hr-footer">
+
+            <div class="centered white">
+                <p> © 2021-2022, FutureSchool, BerryIndustry. </p>
+            </div>
+            
+            
+
+
+        </footer>
+    </div>
+
+</body>
+</html>
